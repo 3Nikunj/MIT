@@ -95,17 +95,66 @@ step_default = 1
 
 # print all the prime number within the range of 10 to 50
 
-n = 7
-for j in range(11,50):
-    flag = True
-    for i in range(2,j):
-        if j%i == 0:
-            flag = False
-            break 
+# for j in range(11,50):
+#     flag = True
+#     for i in range(2,j):
+#         if j%i == 0:
+#             flag = False
+#             break 
 
-    if flag:
-        print("prime",j)
-    else:
-        print("composite",j)
+#     if flag:
+#         print("prime",j)
+#     else:
+#         print("composite",j)
         
+'''
+Collections:
+1 List
+2 Tuple
+3 Dictionary
+4 Set
+'''
 
+# lt = [0, False, 10, None]
+# print(any(lt))
+
+
+
+d = {
+    "name":"Trae",
+    "age":20,
+    "gender":"Male"
+}
+print(d)
+d["age"] = 50
+print(d)
+d["contact"] = 9876543210
+print(d)
+print(d.keys())
+
+
+nums = [0,2,2,1,0,1,1,2,2,1,1,1,1]
+
+set_nums = set(nums)
+print(set_nums)
+
+# for i in set_nums:
+#     if lt.count(i) > n/2:
+#         return i
+
+
+# dict = {}
+# for i in nums:
+#     if i in dict.keys():  
+#         continue
+#     c = nums.count(i)
+#     if c > n/2:
+#         #return i
+#         pass
+#     dict[i] = c
+# print(dict)
+
+# {
+#     0:2,
+#     2:4
+# }
